@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "category": "fruits",
+    "price": 0.99,
+    "organic": true,
+    "calories_per_100g": 52
+  },
+  {
+    "id": 2,
+    "name": "Banana",
+    "category": "fruits",
+    "price": 0.59,
+    "organic": false,
+    "calories_per_100g": 89
+  },
+  {
+    "id": 3,
+    "name": "Orange",
+    "category": "fruits",
+    "price": 1.29,
+    "organic": true,
+    "calories_per_100g": 47
+  },
+  {
+    "id": 4,
+    "name": "Strawberry",
+    "category": "fruits",
+    "price": 2.99,
+    "organic": false,
+    "calories_per_100g": 33
+  },
+  {
+    "id": 5,
+    "name": "Blueberry",
+    "category": "fruits",
+    "price": 3.99,
+    "organic": true,
+    "calories_per_100g": 57
+  },
+  {
+    "id": 6,
+    "name": "Grapes",
+    "category": "fruits",
+    "price": 2.49,
+    "organic": false,
+    "calories_per_100g": 69
+  },
+  {
+    "id": 7,
+    "name": "Mango",
+    "category": "fruits",
+    "price": 1.99,
+    "organic": true,
+    "calories_per_100g": 60
+  },
+  {
+    "id": 8,
+    "name": "Pineapple",
+    "category": "fruits",
+    "price": 3.49,
+    "organic": false,
+    "calories_per_100g": 50
+  },
+  {
+    "id": 9,
+    "name": "Avocado",
+    "category": "fruits",
+    "price": 1.49,
+    "organic": true,
+    "calories_per_100g": 160
+  },
+  {
+    "id": 10,
+    "name": "Peach",
+    "category": "fruits",
+    "price": 1.29,
+    "organic": false,
+    "calories_per_100g": 39
+  },
+  {
+    "id": 11,
+    "name": "Carrot",
+    "category": "vegetables",
+    "price": 0.89,
+    "organic": true,
+    "calories_per_100g": 41
+  },
+  {
+    "id": 12,
+    "name": "Broccoli",
+    "category": "vegetables",
+    "price": 1.59,
+    "organic": false,
+    "calories_per_100g": 34
+  },
+  {
+    "id": 13,
+    "name": "Spinach",
+    "category": "vegetables",
+    "price": 1.99,
+    "organic": true,
+    "calories_per_100g": 23
+  },
+  {
+    "id": 14,
+    "name": "Lettuce",
+    "category": "vegetables",
+    "price": 0.99,
+    "organic": false,
+    "calories_per_100g": 15
+  },
+  {
+    "id": 15,
+    "name": "Tomato",
+    "category": "vegetables",
+    "price": 1.49,
+    "organic": true,
+    "calories_per_100g": 18
+  },
+  {
+    "id": 16,
+    "name": "Cucumber",
+    "category": "vegetables",
+    "price": 0.99,
+    "organic": false,
+    "calories_per_100g": 16
+  },
+  {
+    "id": 17,
+    "name": "Bell Pepper",
+    "category": "vegetables",
+    "price": 1.29,
+    "organic": true,
+    "calories_per_100g": 31
+  },
+  {
+    "id": 18,
+    "name": "Onion",
+    "category": "vegetables",
+    "price": 0.79,
+    "organic": false,
+    "calories_per_100g": 40
+  },
+  {
+    "id": 19,
+    "name": "Sweet Potato",
+    "category": "vegetables",
+    "price": 1.09,
+    "organic": true,
+    "calories_per_100g": 86
+  },
+  {
+    "id": 20,
+    "name": "Chicken Breast",
+    "category": "proteins",
+    "price": 5.99,
+    "organic": true,
+    "calories_per_100g": 165
+  },
+  {
+    "id": 21,
+    "name": "Beef Steak",
+    "category": "proteins",
+    "price": 9.99,
+    "organic": false,
+    "calories_per_100g": 271
+  },
+  {
+    "id": 22,
+    "name": "Salmon",
+    "category": "proteins",
+    "price": 8.99,
+    "organic": true,
+    "calories_per_100g": 208
+  },
+  {
+    "id": 23,
+    "name": "Tofu",
+    "category": "proteins",
+    "price": 2.49,
+    "organic": false,
+    "calories_per_100g": 76
+  },
+  {
+    "id": 24,
+    "name": "Eggs",
+    "category": "proteins",
+    "price": 2.99,
+    "organic": true,
+    "calories_per_100g": 155
+  },
+  {
+    "id": 25,
+    "name": "Turkey Slices",
+    "category": "proteins",
+    "price": 3.99,
+    "organic": false,
+    "calories_per_100g": 104
+  },
+  {
+    "id": 26,
+    "name": "Pork Chops",
+    "category": "proteins",
+    "price": 7.99,
+    "organic": true,
+    "calories_per_100g": 231
+  },
+  {
+    "id": 27,
+    "name": "Shrimp",
+    "category": "proteins",
+    "price": 12.99,
+    "organic": false,
+    "calories_per_100g": 99
+  },
+  {
+    "id": 28,
+    "name": "Black Beans",
+    "category": "proteins",
+    "price": 0.99,
+    "organic": true,
+    "calories_per_100g": 341
+  },
+  {
+    "id": 29,
+    "name": "Almonds",
+    "category": "nuts",
+    "price": 6.99,
+    "organic": true,
+    "calories_per_100g": 579
+  },
+  {
+    "id": 30,
+    "name": "Walnuts",
+    "category": "nuts",
+    "price": 5.99,
+    "organic": false,
+    "calories_per_100g": 654
+  },
+  {
+    "id": 31,
+    "name": "Cashews",
+    "category": "nuts",
+    "price": 7.99,
+    "organic": true,
+    "calories_per_100g": 553
+  },
+  {
+    "id": 32,
+    "name": "Peanuts",
+    "category": "nuts",
+    "price": 3.99,
+    "organic": false,
+    "calories_per_100g": 567
+  },
+  {
+    "id": 33,
+    "name": "Pistachios",
+    "category": "nuts",
+    "price": 8.99,
+    "organic": true,
+    "calories_per_100g": 562
+  },
+  {
+    "id": 34,
+    "name": "Hazelnuts",
+    "category": "nuts",
+    "price": 9.49,
+    "organic": false,
+    "calories_per_100g": 628
+  },
+  {
+    "id": 35,
+    "name": "Macadamia Nuts",
+    "category": "nuts",
+    "price": 12.99,
+    "organic": true,
+    "calories_per_100g": 718
+  },
+  {
+    "id": 36,
+    "name": "Milk",
+    "category": "dairy",
+    "price": 2.49,
+    "organic": true,
+    "calories_per_100g": 42
+  },
+  {
+    "id": 37,
+    "name": "Cheese",
+    "category": "dairy",
+    "price": 4.99,
+    "organic": false,
+    "calories_per_100g": 402
+  },
+  {
+    "id": 38,
+    "name": "Yogurt",
+    "category": "dairy",
+    "price": 1.99,
+    "organic": true,
+    "calories_per_100g": 59
+  },
+  {
+    "id": 39,
+    "name": "Greek Yogurt",
+    "category": "dairy",
+    "price": 2.49,
+    "organic": false,
+    "calories_per_100g": 59
+  },
+  {
+    "id": 40,
+    "name": "Butter",
+    "category": "dairy",
+    "price": 3.49,
+    "organic": false,
+    "calories_per_100g": 717
+  },
+  {
+    "id": 41,
+    "name": "Cream Cheese",
+    "category": "dairy",
+    "price": 2.99,
+    "organic": true,
+    "calories_per_100g": 342
+  },
+  {
+    "id": 42,
+    "name": "Sour Cream",
+    "category": "dairy",
+    "price": 1.99,
+    "organic": false,
+    "calories_per_100g": 214
+  },
+  {
+    "id": 43,
+    "name": "Ice Cream",
+    "category": "dairy",
+    "price": 4.49,
+    "organic": true,
+    "calories_per_100g": 207
+  },
+  {
+    "id": 44,
+    "name": "Rice",
+    "category": "grains",
+    "price": 1.49,
+    "organic": false,
+    "calories_per_100g": 130
+  },
+  {
+    "id": 45,
+    "name": "Pasta",
+    "category": "grains",
+    "price": 1.99,
+    "organic": true,
+    "calories_per_100g": 131
+  },
+  {
+    "id": 46,
+    "name": "Bread",
+    "category": "grains",
+    "price": 2.49,
+    "organic": false,
+    "calories_per_100g": 265
+  },
+  {
+    "id": 47,
+    "name": "Oatmeal",
+    "category": "grains",
+    "price": 3.99,
+    "organic": true,
+    "calories_per_100g": 389
+  },
+  {
+    "id": 48,
+    "name": "Quinoa",
+    "category": "grains",
+    "price": 4.99,
+    "organic": false,
+    "calories_per_100g": 368
+  },
+  {
+    "id": 49,
+    "name": "Cereal",
+    "category": "grains",
+    "price": 3.49,
+    "organic": true,
+    "calories_per_100g": 379
+  },
+  {
+    "id": 50,
+    "name": "Flour",
+    "category": "grains",
+    "price": 1.99,
+    "organic": false,
+    "calories_per_100g": 364
+  }
+]
