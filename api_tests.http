@@ -1,0 +1,79 @@
+# Base URL
+@baseUrl = http://localhost:3000
+
+###
+# Test GET /find/:database/:collection
+###
+GET {{baseUrl}}/find/ProductsDB/Products
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/find/UsersEmployeesDB/Users
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/find/UsersEmployeesDB/Employees
+Content-Type: application/json
+
+###
+
+###
+# Test POST /insert/:database/:collection
+###
+# Insert a single Product
+POST {{baseUrl}}/insert/ProductsDB/Products
+Content-Type: application/json
+
+{
+    "document": {
+        "name": "Apple",
+        "price": 1.99
+    }
+}
+
+###
+
+# Insert multiple Users
+POST {{baseUrl}}/insert/UsersEmployeesDB/Users
+Content-Type: application/json
+
+{
+    "documents": [
+        {
+            "username": "jane_doe",
+            "email": "jane@example.com"
+        },
+        {
+            "username": "john_smith",
+            "email": "john@example.com"
+        }
+    ]
+}
+
+###
+
+###
+# Test PUT /update/:database/:collection/:id
+###
+# Update a Product (Replace {product_id} with an actual ID)
+PUT {{baseUrl}}/update/ProductsDB/Products/{product_id}
+Content-Type: application/json
+
+{
+    "update": {
+        "price": 2.49
+    }
+}
+
+###
+
+###
+# Test DELETE /delete/:database/:collection/:id
+###
+# Delete a User (Replace {user_id} with an actual ID)
+DELETE {{baseUrl}}/delete/UsersEmployeesDB/Users/{user_id}
+Content-Type: application/json
+
+###
