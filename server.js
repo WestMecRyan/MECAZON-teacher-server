@@ -70,12 +70,12 @@ const getModel = async (dbName, collectionName) => {
       case "Products":
         schema = productSchema;
         break;
-      case "Users":
-        schema = userSchema;
-        break;
-      case "Employees":
-        schema = employeeSchema;
-        break;
+      // case "Users":
+      //   schema = userSchema;
+      //   break;
+      // case "Employees":
+      //   schema = employeeSchema;
+      //   break;
       default:
         throw new Error(`No schema defined for collection: ${collectionName}`);
     }
@@ -191,7 +191,7 @@ app.put("/update/:database/:collection/:id", async (req, res) => {
   }
 });
 
-// Start the server after defining routes
+// Test connections before starting server
 async function startServer() {
   try {
     console.log("Starting server with environment variables:", {
@@ -203,15 +203,15 @@ async function startServer() {
       client: process.env.MONGO_CLIENT_URI,
       server: process.env.MONGO_SERVER_URI,
     });
-    // Test connections before starting server
-    const testDatabases = ["ProductsDB", "UsersEmployeesDB"];
+
+    // Only test ProductsDB for now since we only have Products schema
+    const testDatabases = ["ProductsDB"];
     for (const dbName of testDatabases) {
       const connection = await getConnection(dbName);
       console.log(`Successfully connected to MongoDB database: ${dbName}`);
 
-      // Optionally, perform a simple query to ensure collections are accessible
-      const testCollections =
-        dbName === "ProductsDB" ? ["Products"] : ["Users", "Employees"];
+      // Only test Products collection
+      const testCollections = ["Products"];
       for (const collectionName of testCollections) {
         const Model = await getModel(dbName, collectionName);
         const count = await Model.estimatedDocumentCount();
@@ -229,5 +229,4 @@ async function startServer() {
     process.exit(1);
   }
 }
-
 startServer();

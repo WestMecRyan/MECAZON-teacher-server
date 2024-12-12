@@ -1,8 +1,11 @@
 {
   "name": "MECAZON-teacher-server",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
-  "forwardPorts": [3000],
-  "postCreateCommand": "npm install",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:0-focal",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -11,6 +14,11 @@
       ]
     }
   },
-  // (Optional) Additional features or settings can go here.
-  "features": {}
+  "forwardPorts": [3000],
+  "remoteEnv": {
+    "MONGO_CLIENT_URI": "${localEnv:TEACHER_FRONT_END}",
+    "MONGO_SERVER_URI": "${localEnv:TEACHER_BACK_END}"
+  },
+  "postCreateCommand": "bash -c 'npm install && echo \"MONGO_CLIENT_URI=${TEACHER_FRONT_END}\nMONGO_SERVER_URI=${TEACHER_BACK_END}\nPORT=3000\" > .env.production'",
+  "shutdownAction": "none"
 }
